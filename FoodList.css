@@ -1,0 +1,39 @@
+body{
+    background-image: url("img/bk6.jpeg");
+    background-repeat: repeat;
+    background-position: left bottom;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+form{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.logo-title{
+    text-align: center;
+    background-color: rgba(0, 128, 255, 0.4);
+    border-radius: 15px;
+}
+
+.left-resList{
+    float:left;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 50px;
+    padding-bottom: 300px;
+}
+
+.right-foodList{
+    float:left;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 200px;
+    padding-bottom: 300px;
+}
+
+.copyright{
+    text-align: center;
+    font-family: cursive;
+}
