@@ -1,5 +1,5 @@
 body{
-    background-image: url("img/bk6.jpeg");
+    background-image: url("img/pic.jpg");
     background-repeat: repeat;
     background-position: left bottom;
     background-attachment: fixed;
@@ -7,30 +7,86 @@ body{
 }
 
 form{
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .logo-title{
     text-align: center;
-    background-color: rgba(0, 128, 255, 0.4);
-    border-radius: 15px;
+    background-color: rgba(245,222,179,0.63);
+    border-radius: 10px;
+}
+
+.list-content{
+    font-family: STXINWEI;
+    font-size: larger;
+    height: 800px;
+    text-align: center;
 }
 
 .left-resList{
     float:left;
-    margin-top: 20px;
-    margin-left: 200px;
-    margin-right: 50px;
-    padding-bottom: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 15px;
+    width: 25%;
+    height: inherit;
+    background-color: rgba(20,145,200,0.4);
+}
+.res-select{
+    background-color: cadetblue;
+    height:60px;
+    line-height: 60px;
+    opacity: 0.75;
+    font-size:x-large;
+    border-radius: 2px;
+    border: aqua;
+}
+.res-select:hover{
+    background-color: rgb(50,125,180);
 }
 
 .right-foodList{
     float:left;
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 200px;
-    padding-bottom: 300px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 15px;
+    width: 75%;
+    height: inherit;
+    background-color: rgba(170,225,160,0.4);
+}
+
+.menu-title{
+    background-color: rgba(90,180,200,0.4);
+    margin: auto;
+    margin-bottom: 10px ;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-family: "STXINWEI";
+    line-height: 40px;
+    border-radius: 50px;
+}
+
+.food-pics{
+    margin: auto;
+}
+
+.food-info{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(180,215,180,0.5);
+    border-radius: 8px;
+}
+
+.food-info img{
+    border-radius: 20px;
+    width: 180px;
+    height: 180px;
+}
+
+.food-text{
+    margin: auto;
 }
 
 .copyright{
