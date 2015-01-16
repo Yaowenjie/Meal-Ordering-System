@@ -6,7 +6,7 @@ body{
     background-size: 100% auto;
 }
 
-form{
+.all-content{
     margin-left: 200px;
     margin-right: 200px;
 }
@@ -17,6 +17,15 @@ form{
     border-radius: 10px;
 }
 
+.logo-png{
+    width: 100px;
+    height: 80px;
+}
+
+.title-png{
+    width:400px;
+    height: 80px;
+}
 .list-content{
     font-family: STXINWEI;
     font-size: larger;
@@ -81,8 +90,8 @@ form{
 
 .food-info img{
     border-radius: 20px;
-    width: 180px;
-    height: 180px;
+    max-width: 180px;
+    max-height: 180px;
 }
 
 .food-text{
