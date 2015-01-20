@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2+∞ Food Order System</title>
+    <link rel="stylesheet" href="FoodList.css"/>
+    <script type="text/javascript" src="JS/angular.min.js"></script>
+    <script type="text/javascript" src="JS/angular-route.min.js"></script>
+    <script type="text/javascript" src="JS/mylist.js"></script>
+</head>
+<body ng-controller="TestController">
+    <div class="all-content" action="">
+        <header class="logo-title">
+            <img src="img/Logo.png" alt="" class="logo-png"/>
+            <img src="img/title.png" alt="" class="title-png"/>
+        </header>
+
+        <div class="list-content">
+            <div class="left-resList">
+                <br/><h3>Restaurants</h3><br/>
+                <dl>
+                    <dt class="res-select" ng-repeat="i in res">{{i.name}}</dt>
+                </dl>
+                <h3>确认订单</h3>
+                <button type="button" ng-click="go_to_list()" class="ensurebutton">确认</button>
+            </div>
+
+            <div class="right-foodList">
+                <div class="menu-title" ><h2>Menu</h2></div>
+                <table class="food-pics" >
+                    <tr>
+                        <td class="food-info">
+                            <img src={{items[0].img}} alt="" /><br>
+                            <p class="food-text">{{items[0].name}}    ￥{{items[0].price}}</p>
+                            <form name="input" action=" "  method="get">
+                                <input type="submit" value="-" class="smallbutton" ng-click="subfromlist(0)" />
+                                <input type="text" placeholder={{items[0].amount}} class="myamout" />
+                                <input type="submit" value="+" class="smallbutton" ng-click="addtolist(0)"/>
+                            </form>
+                        </td>
+                        <td class="food-info">
+                            <img src="img/f2.jpg" alt="你的菜" /><br>
+                            <p class="food-text">{{items[1].name}}    ￥{{items[1].price}}</p>
+                            <form name="input" action=" "  method="get">
+                                <input type="submit" value="-" class="smallbutton" ng-click="subfromlist(1)" />
+                                <input type="text" placeholder={{items[1].amount}} class="myamout" />
+                                <input type="submit" value="+" class="smallbutton" ng-click="addtolist(1)"/>
+                            </form>
+                        </td>
+                        <td class="food-info">
+                            <img src="img/f3.jpg" alt="你的菜" /><br>
+                            <p class="food-text">{{items[2].name}}    ￥{{items[2].price}}</p>
+                            <form name="input" action=" "  method="get">
+                                <input type="submit" value="-" class="smallbutton" ng-click="subfromlist(2)" />
+                                <input type="text" placeholder={{items[2].amount}} class="myamout" />
+                                <input type="submit" value="+" class="smallbutton" ng-click="addtolist(2)"/>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="food-info">
+                            <img src="img/f4.jpg" alt="" /><br>
+                            <p class="food-text" >{{items[3].name}}    ￥{{items[3].price}}</p>
+                            <form name="input" action=" "  method="get">
+                                <input type="submit" value="-" class="smallbutton" ng-click="subfromlist(3)" />
+                                <input type="text" placeholder={{items[3].amount}} class="myamout" />
+                                <input type="submit" value="+" class="smallbutton" ng-click="addtolist(3)"/>
+                            </form>
+                        </td>
+                        <td class="food-info">
+                            <img src="img/f5.jpg" alt="" /><br>
+                            <p class="food-text" >{{items[4].name}}    ￥{{items[4].price}}</p>
+                            <form name="input" action=" "  method="get">
+                                <input type="submit" value="-" class="smallbutton" ng-click="subfromlist(4)" />
+                                <input type="text" placeholder={{items[4].amount}} class="myamout" />
+                                <input type="submit" value="+" class="smallbutton" ng-click="addtolist(4)"/>
+                            </form>
+                        </td>
+                        <td class="food-info">
+                            <img src="img/f6.jpg" alt="" /><br>
+                            <p class="food-text" >{{items[5].name}}    ￥{{items[5].price}}</p>
+                            <form name="input" action=" "  method="get">
+                                <input type="submit" value="-" class="smallbutton" ng-click="subfromlist(5)" />
+                                <input type="text" placeholder={{items[5].amount}} class="myamout" />
+                                <input type="submit" value="+" class="smallbutton" ng-click="addtolist(5)"/>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="food-info">
+                            <img src="img/f7.jpg" alt="" /><br>
+                            <p class="food-text" >{{items[6].name}}    ￥{{items[6].price}}</p>
+                            <form name="input" action=" "  method="get">
+                                <input type="submit" value="-" class="smallbutton" ng-click="subfromlist(6)" />
+                                <input type="text" placeholder={{items[6].amount}} class="myamout" />
+                                <input type="submit" value="+" class="smallbutton" ng-click="addtolist(6)"/>
+                            </form>
+                        </td>
+                        <td class="food-info">
+                            <img src="img/f8.jpg" alt="" /><br>
+                            <p class="food-text" >{{items[7].name}}    ￥{{items[7].price}}</p>
+                            <form name="input" action=" "  method="get">
+                                <input type="submit" value="-" class="smallbutton" ng-click="subfromlist(7)" />
+                                <input type="text" placeholder={{items[7].amount}} class="myamout" />
+                                <input type="submit" value="+" class="smallbutton" ng-click="addtolist(7)"/>
+                            </form>
+                        </td>
+                        <td class="food-info">
+                            <img src="img/f9.jpg" alt="" /><br>
+                            <p class="food-text" >{{items[8].name}}    ￥{{items[8].price}}</p>
+                            <form name="input" action=" "  method="get">
+                                <input type="submit" value="-" class="smallbutton" ng-click="subfromlist(8)" />
+                                <input type="text" placeholder={{items[8].amount}} class="myamout" />
+                                <input type="submit" value="+" class="smallbutton" ng-click="addtolist(8)"/>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <br>
+            <p class="copyright">CopyRight @Yao Wenjie</p>
+        </footer>
+    </div>
+</body>
+</html>
