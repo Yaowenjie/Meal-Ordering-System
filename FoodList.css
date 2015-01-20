@@ -77,15 +77,29 @@ body{
     border-radius: 50px;
 }
 
-
-button{
+.ensurebutton{
     background-color: rgb(25,130,190);
     padding: 3px 22px;
 }
 
-button:hover{
+.ensurebutton:hover{
     background-color: rgb(30,150,200);
 }
+
+.smallbutton{
+    font-size: 18px;
+    width: 30px;
+    text-align: center;
+    background-color: rgb(25,130,190);
+}
+.smallbutton:hover{
+    background-color: rgb(30,150,200);
+}
+
+.myamout{
+    width: 25px;
+}
+
 .food-pics{
     margin: auto;
 }
