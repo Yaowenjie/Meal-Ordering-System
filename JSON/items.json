@@ -1,0 +1,64 @@
+[
+  {
+    "name": "多彩小包",
+    "price": 10.50,
+    "amount":0,
+    "img":"img/f1.jpg"
+  },
+
+  {
+    "name": "甜蜜点心",
+    "price": 12.80,
+    "amount":0,
+    "img":"img/f2.jpg"
+  },
+
+  {
+    "name": "她的微笑",
+    "price": 13.40,
+    "amount":0,
+    "img":"img/f3.jpg"
+  },
+
+  {
+    "name": "樱桃糕点",
+    "price": 15.60,
+    "amount":0,
+    "img":"img/f4.jpg"
+  },
+
+  {
+    "name": "水果蛋糕",
+    "price": 12.50,
+    "amount":0,
+    "img":"img/f5.jpg"
+  },
+
+  {
+    "name": "曲奇饼干",
+    "price": 15.90,
+    "amount":0,
+    "img":"img/f6.jpg"
+  },
+
+  {
+    "name": "巧克力蛋糕",
+    "price": 18.80,
+    "amount":0,
+    "img":"img/f7.jpg"
+  },
+
+  {
+    "name": "水果蛋糕",
+    "price": 13.50,
+    "amount":0,
+    "img":"img/f8.jpg"
+  },
+
+  {
+    "name": "切片巧克力",
+    "price": 11.50,
+    "amount":0,
+    "img":"img/f9.jpg"
+  }
+]
